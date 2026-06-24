@@ -31,6 +31,10 @@
     {
       "content": "Agente ⚛️ Experto Frontend completó: Options Page. Archivos: options.html, options.js, manifest.json",
       "timestamp": "2026-06-24T04:16:42.880531"
+    },
+    {
+      "content": "Agente ⚛️ Experto Frontend completó: Options Page JavaScript. Archivos: options.js",
+      "timestamp": "2026-06-24T04:19:55.090492"
     }
   ],
   "decisions": [],
@@ -52,7 +56,11 @@
     ],
     "tools_api_agent": [
       "manifest.json",
-      "content.js"
+      "content.js",
+      "icons/icon16.png",
+      "icons/icon48.png",
+      "icons/icon128.png",
+      "manifest.json"
     ],
     "ui_expert": [
       "styles.css",
