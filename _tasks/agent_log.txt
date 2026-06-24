@@ -13,3 +13,5 @@
 [2026-06-24 03:48:23] [IN_PROGRESS] task_001: Crear estructura del proyecto
 [2026-06-24 03:50:54] [COMPLETED] task_001: Crear estructura del proyecto
 [2026-06-24 03:50:56] [IN_PROGRESS] task_002: Configurar Manifest V3
+[2026-06-24 03:53:20] [COMPLETED] task_002: Configurar Manifest V3
+[2026-06-24 03:53:23] [IN_PROGRESS] task_003: Diseño del Popup
