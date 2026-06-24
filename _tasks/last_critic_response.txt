@@ -1,3 +1,16 @@
+### Resumen de Errores Encontrados:
+
+1. **Falta de archivo `popup.js`:** El archivo `popup.html` hace referencia a un script `popup.js`, pero este archivo no está presente en el proyecto.
+2. **Rutas incorrectas en `manifest.json`:** El archivo `manifest.json` menciona una ruta `options_page: "options.html"` que es correcta, pero no hay garantía de que existan las rutas `icons/icon16.png`, `icons/icon48.png`, y `icons/icon128.png`.
+3. **Variables no definidas en `content.js`:** La variable `screenshotElement` en `content.js` se utiliza antes de ser definida correctamente.
+4. **Problemas de compatibilidad entre archivos:** El archivo `background.js` tiene funciones que podrían ser utilizadas por otros scripts, pero no hay garantía de que estas funciones sean llamadas desde el frontend.
+
+### Correcciones Propuestas:
+
+#### 1. Creación del archivo `popup.js`
+
+FILE_PATH: popup.js
+```javascript
 document.getElementById('take-screenshot').addEventListener('click', async () => {
   try {
     chrome.runtime.sendMessage({ action: 'captureAndAnnotate' });
@@ -53,3 +66,15 @@ document.querySelectorAll('button').forEach(button => {
     localStorage.setItem('theme', currentTheme);
   });
 });
+```
+
+#### 2. Asegurarse de que los iconos existan
+
+Asegúrate de que las imágenes `icon16.png`, `icon48.png`, y `icon128.png` estén presentes en el directorio `icons/`.
+
+### Notas Adicionales:
+
+- **Variables no definidas:** En `content.js`, la variable `screenshotElement` debe ser correctamente definida antes de su uso. Esto podría requerir ajustes dependiendo del HTML real que se use.
+- **Compatibilidad entre archivos:** Asegúrate de que los mensajes enviados desde el frontend (`popup.js`) sean correctamente manejados por el backend (`background.js`).
+
+Con estos cambios, el proyecto debería funcionar sin errores críticos.
