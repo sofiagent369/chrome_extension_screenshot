@@ -7,8 +7,18 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <h1>Screenshot and Annotate</h1>
-  <button id="take-screenshot">Take Screenshot</button>
+  <div class="popup-container">
+    <h1>Screenshot and Annotate</h1>
+    
+    <button id="take-screenshot">Take Screenshot</button>
+    <button id="annotate">Annotate</button>
+    <button id="options">Options</button>
+
+    <div id="screenshot-container" class="hidden">
+      <img id="screenshot-image" alt="Screenshot">
+    </div>
+  </div>
+
   <script src="popup.js"></script>
 </body>
 </html>

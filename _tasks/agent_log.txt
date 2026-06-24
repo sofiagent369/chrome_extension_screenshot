@@ -15,3 +15,5 @@
 [2026-06-24 03:50:56] [IN_PROGRESS] task_002: Configurar Manifest V3
 [2026-06-24 03:53:20] [COMPLETED] task_002: Configurar Manifest V3
 [2026-06-24 03:53:23] [IN_PROGRESS] task_003: Diseño del Popup
+[2026-06-24 03:57:36] [COMPLETED] task_003: Diseño del Popup
+[2026-06-24 03:57:39] [IN_PROGRESS] task_004: Implementar Popup HTML
