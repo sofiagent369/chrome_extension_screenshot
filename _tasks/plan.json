@@ -1,0 +1,118 @@
+{
+  "project_name": "chrome_extension_screenshot",
+  "description": "Extensión de Chrome para hacer screenshots y anotaciones de páginas web con interfaz moderna y opciones persistentes.",
+  "tech_stack": [
+    "HTML",
+    "CSS",
+    "JavaScript",
+    "Manifest V3"
+  ],
+  "tasks": [
+    {
+      "title": "Crear estructura del proyecto",
+      "description": "Crear la carpeta del proyecto e inicializar los archivos básicos: manifest.json, popup.html, popup.js, styles.css, background.js y crear la carpeta 'icons/'.",
+      "assigned_to": "frontend_expert",
+      "dependencies": [],
+      "priority": 1
+    },
+    {
+      "title": "Configurar Manifest V3",
+      "description": "Configurar manifest.json con permisos necesarios (activeTab, storage), background script, content script y declarar los iconos.",
+      "assigned_to": "tools_api_agent",
+      "dependencies": [
+        "task_001"
+      ],
+      "priority": 2
+    },
+    {
+      "title": "Diseño del Popup",
+      "description": "Crear styles.css con diseño moderno para el popup: botones de captura y anotación, interfaz limpia, fuente Inter de Google Fonts.",
+      "assigned_to": "ui_expert",
+      "dependencies": [
+        "task_001"
+      ],
+      "priority": 2
+    },
+    {
+      "title": "Implementar Popup HTML",
+      "description": "Crear popup.html con layout básico: botones para capturar, anotar y opciones.",
+      "assigned_to": "frontend_expert",
+      "dependencies": [
+        "task_001"
+      ],
+      "priority": 2
+    },
+    {
+      "title": "Lógica del Popup JavaScript",
+      "description": "Crear popup.js con interacción básica: mostrar el popup, manejo de eventos de botones.",
+      "assigned_to": "frontend_expert",
+      "dependencies": [
+        "task_001",
+        "task_004"
+      ],
+      "priority": 2
+    },
+    {
+      "title": "Background Script",
+      "description": "Crear background.js con lógica para gestionar la persistencia de configuraciones y comunicación entre scripts.",
+      "assigned_to": "backend_expert",
+      "dependencies": [
+        "task_002"
+      ],
+      "priority": 3
+    },
+    {
+      "title": "Content Script",
+      "description": "Crear content.js con lógica para interactuar con páginas web: capturar screenshots, anotaciones y enviar datos al popup.",
+      "assigned_to": "backend_expert",
+      "dependencies": [
+        "task_002"
+      ],
+      "priority": 3
+    },
+    {
+      "title": "Options Page",
+      "description": "Crear options.html con configuraciones persistentes: tamaño de pantalla, temas (claro/oscuro), guardar y restaurar preferencias.",
+      "assigned_to": "frontend_expert",
+      "dependencies": [
+        "task_001"
+      ],
+      "priority": 4
+    },
+    {
+      "title": "Options Page JavaScript",
+      "description": "Crear options.js con lógica para manejar las preferencias del usuario y guardar/restaurar en localStorage.",
+      "assigned_to": "frontend_expert",
+      "dependencies": [
+        "task_008"
+      ],
+      "priority": 4
+    },
+    {
+      "title": "Establecer Iconos",
+      "description": "Agregar iconos al directorio 'icons/' y actualizar manifest.json con rutas de los iconos.",
+      "assigned_to": "tools_api_agent",
+      "dependencies": [
+        "task_001"
+      ],
+      "priority": 5
+    },
+    {
+      "title": "README",
+      "description": "Crear README.md con descripción del proyecto, capturas de pantalla, instalación y configuración.",
+      "assigned_to": "writer_agent",
+      "dependencies": [
+        "task_001",
+        "task_002",
+        "task_003",
+        "task_004",
+        "task_005",
+        "task_006",
+        "task_007",
+        "task_008",
+        "task_009"
+      ],
+      "priority": 6
+    }
+  ]
+}

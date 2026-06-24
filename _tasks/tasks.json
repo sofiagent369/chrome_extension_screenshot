@@ -1,0 +1,188 @@
+{
+  "tasks": [
+    {
+      "id": "task_001",
+      "title": "Crear estructura del proyecto",
+      "description": "Crear la carpeta del proyecto e inicializar los archivos básicos: manifest.json, popup.html, popup.js, styles.css, background.js y crear la carpeta 'icons/'.",
+      "assigned_to": "frontend_expert",
+      "status": "in_progress",
+      "priority": 1,
+      "dependencies": [],
+      "output_files": [],
+      "output_summary": "",
+      "created_at": "2026-06-24T03:48:22.430185",
+      "started_at": "2026-06-24T03:48:23.604962",
+      "completed_at": null
+    },
+    {
+      "id": "task_002",
+      "title": "Configurar Manifest V3",
+      "description": "Configurar manifest.json con permisos necesarios (activeTab, storage), background script, content script y declarar los iconos.",
+      "assigned_to": "tools_api_agent",
+      "status": "pending",
+      "priority": 2,
+      "dependencies": [
+        "task_001"
+      ],
+      "output_files": [],
+      "output_summary": "",
+      "created_at": "2026-06-24T03:48:22.442056",
+      "started_at": null,
+      "completed_at": null
+    },
+    {
+      "id": "task_003",
+      "title": "Diseño del Popup",
+      "description": "Crear styles.css con diseño moderno para el popup: botones de captura y anotación, interfaz limpia, fuente Inter de Google Fonts.",
+      "assigned_to": "ui_expert",
+      "status": "pending",
+      "priority": 2,
+      "dependencies": [
+        "task_001"
+      ],
+      "output_files": [],
+      "output_summary": "",
+      "created_at": "2026-06-24T03:48:22.455248",
+      "started_at": null,
+      "completed_at": null
+    },
+    {
+      "id": "task_004",
+      "title": "Implementar Popup HTML",
+      "description": "Crear popup.html con layout básico: botones para capturar, anotar y opciones.",
+      "assigned_to": "frontend_expert",
+      "status": "pending",
+      "priority": 2,
+      "dependencies": [
+        "task_001"
+      ],
+      "output_files": [],
+      "output_summary": "",
+      "created_at": "2026-06-24T03:48:22.461855",
+      "started_at": null,
+      "completed_at": null
+    },
+    {
+      "id": "task_005",
+      "title": "Lógica del Popup JavaScript",
+      "description": "Crear popup.js con interacción básica: mostrar el popup, manejo de eventos de botones.",
+      "assigned_to": "frontend_expert",
+      "status": "pending",
+      "priority": 2,
+      "dependencies": [
+        "task_001",
+        "task_004"
+      ],
+      "output_files": [],
+      "output_summary": "",
+      "created_at": "2026-06-24T03:48:22.461855",
+      "started_at": null,
+      "completed_at": null
+    },
+    {
+      "id": "task_006",
+      "title": "Background Script",
+      "description": "Crear background.js con lógica para gestionar la persistencia de configuraciones y comunicación entre scripts.",
+      "assigned_to": "backend_expert",
+      "status": "pending",
+      "priority": 3,
+      "dependencies": [
+        "task_002"
+      ],
+      "output_files": [],
+      "output_summary": "",
+      "created_at": "2026-06-24T03:48:22.473769",
+      "started_at": null,
+      "completed_at": null
+    },
+    {
+      "id": "task_007",
+      "title": "Content Script",
+      "description": "Crear content.js con lógica para interactuar con páginas web: capturar screenshots, anotaciones y enviar datos al popup.",
+      "assigned_to": "backend_expert",
+      "status": "pending",
+      "priority": 3,
+      "dependencies": [
+        "task_002"
+      ],
+      "output_files": [],
+      "output_summary": "",
+      "created_at": "2026-06-24T03:48:22.473769",
+      "started_at": null,
+      "completed_at": null
+    },
+    {
+      "id": "task_008",
+      "title": "Options Page",
+      "description": "Crear options.html con configuraciones persistentes: tamaño de pantalla, temas (claro/oscuro), guardar y restaurar preferencias.",
+      "assigned_to": "frontend_expert",
+      "status": "pending",
+      "priority": 4,
+      "dependencies": [
+        "task_001"
+      ],
+      "output_files": [],
+      "output_summary": "",
+      "created_at": "2026-06-24T03:48:22.489739",
+      "started_at": null,
+      "completed_at": null
+    },
+    {
+      "id": "task_009",
+      "title": "Options Page JavaScript",
+      "description": "Crear options.js con lógica para manejar las preferencias del usuario y guardar/restaurar en localStorage.",
+      "assigned_to": "frontend_expert",
+      "status": "pending",
+      "priority": 4,
+      "dependencies": [
+        "task_008"
+      ],
+      "output_files": [],
+      "output_summary": "",
+      "created_at": "2026-06-24T03:48:22.489739",
+      "started_at": null,
+      "completed_at": null
+    },
+    {
+      "id": "task_010",
+      "title": "Establecer Iconos",
+      "description": "Agregar iconos al directorio 'icons/' y actualizar manifest.json con rutas de los iconos.",
+      "assigned_to": "tools_api_agent",
+      "status": "pending",
+      "priority": 5,
+      "dependencies": [
+        "task_001"
+      ],
+      "output_files": [],
+      "output_summary": "",
+      "created_at": "2026-06-24T03:48:22.509666",
+      "started_at": null,
+      "completed_at": null
+    },
+    {
+      "id": "task_011",
+      "title": "README",
+      "description": "Crear README.md con descripción del proyecto, capturas de pantalla, instalación y configuración.",
+      "assigned_to": "writer_agent",
+      "status": "pending",
+      "priority": 6,
+      "dependencies": [
+        "task_001",
+        "task_002",
+        "task_003",
+        "task_004",
+        "task_005",
+        "task_006",
+        "task_007",
+        "task_008",
+        "task_009"
+      ],
+      "output_files": [],
+      "output_summary": "",
+      "created_at": "2026-06-24T03:48:22.509666",
+      "started_at": null,
+      "completed_at": null
+    }
+  ],
+  "updated_at": "2026-06-24T03:48:23.604962"
+}

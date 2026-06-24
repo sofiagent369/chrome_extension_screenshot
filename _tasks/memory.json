@@ -1,0 +1,13 @@
+{
+  "context": [],
+  "decisions": [],
+  "file_map": {
+    "frontend_expert": [
+      "manifest.json",
+      "popup.html",
+      "popup.js",
+      "styles.css",
+      "background.js"
+    ]
+  }
+}

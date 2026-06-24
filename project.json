@@ -1,0 +1,17 @@
+{
+  "name": "chrome_extension_screenshot",
+  "display_name": "chrome_extension_screenshot",
+  "description": "Extensión de Chrome para hacer screenshots y anotaciones de páginas web con interfaz moderna y opciones persistentes.",
+  "tech_stack": [
+    "HTML",
+    "CSS",
+    "JavaScript",
+    "Manifest V3"
+  ],
+  "created_at": "2026-06-24T03:48:22.430185",
+  "created_by": "Bot_Ant Multi-Agent System",
+  "version": "1.0.0",
+  "status": "in_development",
+  "portable": true,
+  "notes": "Este proyecto es portable. Puedes mover la carpeta completa a otro equipo."
+}
