@@ -63,23 +63,27 @@
       "title": "Implementar Popup HTML",
       "description": "Crear popup.html con layout básico: botones para capturar, anotar y opciones.",
       "assigned_to": "frontend_expert",
-      "status": "in_progress",
+      "status": "completed",
       "priority": 2,
       "dependencies": [
         "task_001"
       ],
-      "output_files": [],
-      "output_summary": "",
+      "output_files": [
+        "popup.html",
+        "styles.css",
+        "popup.js"
+      ],
+      "output_summary": "Para implementar el popup HTML con un layout básico que incluya botones para capturar, anotar y opciones adicionales, vamos a modificar el archivo `popup.html` existente. Añadiremos nuevos botones y una sección para mostrar la imagen del screenshot. | Archivos: popup.html, styles.css, popup.js",
       "created_at": "2026-06-24T03:48:22.461855",
       "started_at": "2026-06-24T03:57:39.142282",
-      "completed_at": null
+      "completed_at": "2026-06-24T04:01:43.987436"
     },
     {
       "id": "task_005",
       "title": "Lógica del Popup JavaScript",
       "description": "Crear popup.js con interacción básica: mostrar el popup, manejo de eventos de botones.",
       "assigned_to": "frontend_expert",
-      "status": "pending",
+      "status": "in_progress",
       "priority": 2,
       "dependencies": [
         "task_001",
@@ -88,7 +92,7 @@
       "output_files": [],
       "output_summary": "",
       "created_at": "2026-06-24T03:48:22.461855",
-      "started_at": null,
+      "started_at": "2026-06-24T04:01:46.539896",
       "completed_at": null
     },
     {
@@ -196,5 +200,5 @@
       "completed_at": null
     }
   ],
-  "updated_at": "2026-06-24T03:57:39.142282"
+  "updated_at": "2026-06-24T04:01:46.539896"
 }
