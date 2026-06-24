@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Options</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="options-container">
+    <h2>Extension Settings</h2>
+
+    <label for="screen-size">Screen Size:</label>
+    <select id="screen-size">
+      <option value="small">Small</option>
+      <option value="medium">Medium</option>
+      <option value="large">Large</option>
+    </select>
+
+    <div class="theme-selection">
+      <h3>Theme:</h3>
+      <label>
+        <input type="radio" name="theme" value="light">
+        Light
+      </label>
+      <label>
+        <input type="radio" name="theme" value="dark">
+        Dark
+      </label>
+    </div>
+
+    <button id="save-options">Save Options</button>
+  </div>
+
+  <script src="options.js"></script>
+</body>
+</html>

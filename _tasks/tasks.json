@@ -120,23 +120,26 @@
       "title": "Content Script",
       "description": "Crear content.js con lógica para interactuar con páginas web: capturar screenshots, anotaciones y enviar datos al popup.",
       "assigned_to": "backend_expert",
-      "status": "in_progress",
+      "status": "completed",
       "priority": 3,
       "dependencies": [
         "task_002"
       ],
-      "output_files": [],
-      "output_summary": "",
+      "output_files": [
+        "content.js",
+        "popup.js"
+      ],
+      "output_summary": "Para completar la funcionalidad de captura y anotación de screenshots, vamos a implementar la lógica en el archivo `content.js`. Este script se encargará de interactuar con las páginas web para realizar las operaciones necesarias.\n\n### Explicación:\n\n1. **Capturar Screenshot**: Utilizaremos el método | Archivos: content.js, popup.js",
       "created_at": "2026-06-24T03:48:22.473769",
       "started_at": "2026-06-24T04:06:04.387310",
-      "completed_at": null
+      "completed_at": "2026-06-24T04:11:41.619750"
     },
     {
       "id": "task_008",
       "title": "Options Page",
       "description": "Crear options.html con configuraciones persistentes: tamaño de pantalla, temas (claro/oscuro), guardar y restaurar preferencias.",
       "assigned_to": "frontend_expert",
-      "status": "pending",
+      "status": "in_progress",
       "priority": 4,
       "dependencies": [
         "task_001"
@@ -144,7 +147,7 @@
       "output_files": [],
       "output_summary": "",
       "created_at": "2026-06-24T03:48:22.489739",
-      "started_at": null,
+      "started_at": "2026-06-24T04:11:44.152013",
       "completed_at": null
     },
     {
@@ -204,5 +207,5 @@
       "completed_at": null
     }
   ],
-  "updated_at": "2026-06-24T04:06:04.387310"
+  "updated_at": "2026-06-24T04:11:44.152013"
 }

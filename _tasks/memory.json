@@ -23,6 +23,10 @@
     {
       "content": "Agente ⚙️ Experto Backend completó: Background Script. Archivos: background.js",
       "timestamp": "2026-06-24T04:06:01.857137"
+    },
+    {
+      "content": "Agente ⚙️ Experto Backend completó: Content Script. Archivos: content.js, popup.js",
+      "timestamp": "2026-06-24T04:11:41.635844"
     }
   ],
   "decisions": [],
@@ -36,7 +40,10 @@
       "popup.html",
       "styles.css",
       "popup.js",
-      "popup.js"
+      "popup.js",
+      "options.html",
+      "options.js",
+      "manifest.json"
     ],
     "tools_api_agent": [
       "manifest.json",
