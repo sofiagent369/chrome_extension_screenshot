@@ -19,3 +19,5 @@
 [2026-06-24 03:57:39] [IN_PROGRESS] task_004: Implementar Popup HTML
 [2026-06-24 04:01:43] [COMPLETED] task_004: Implementar Popup HTML
 [2026-06-24 04:01:46] [IN_PROGRESS] task_005: Lógica del Popup JavaScript
+[2026-06-24 04:04:15] [COMPLETED] task_005: Lógica del Popup JavaScript
+[2026-06-24 04:04:18] [IN_PROGRESS] task_006: Background Script

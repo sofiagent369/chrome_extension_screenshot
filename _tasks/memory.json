@@ -15,6 +15,10 @@
     {
       "content": "Agente ⚛️ Experto Frontend completó: Implementar Popup HTML. Archivos: popup.html, styles.css, popup.js",
       "timestamp": "2026-06-24T04:01:44.003380"
+    },
+    {
+      "content": "Agente ⚛️ Experto Frontend completó: Lógica del Popup JavaScript. Archivos: popup.js",
+      "timestamp": "2026-06-24T04:04:15.600501"
     }
   ],
   "decisions": [],
@@ -37,6 +41,9 @@
     "ui_expert": [
       "styles.css",
       "popup.js"
+    ],
+    "backend_expert": [
+      "background.js"
     ]
   }
 }

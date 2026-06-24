@@ -83,24 +83,26 @@
       "title": "Lógica del Popup JavaScript",
       "description": "Crear popup.js con interacción básica: mostrar el popup, manejo de eventos de botones.",
       "assigned_to": "frontend_expert",
-      "status": "in_progress",
+      "status": "completed",
       "priority": 2,
       "dependencies": [
         "task_001",
         "task_004"
       ],
-      "output_files": [],
-      "output_summary": "",
+      "output_files": [
+        "popup.js"
+      ],
+      "output_summary": "### Explicación:\nHe revisado y mejorado el archivo `popup.js` para implementar la lógica básica de interacción en el popup. Se han añadido eventos de clic para los botones \"Take Screenshot\", \"Annotate\" y \"Options\". También se ha asegurado que el screenshot se muestre correctamente en la interfaz.\n\n# | Archivos: popup.js",
       "created_at": "2026-06-24T03:48:22.461855",
       "started_at": "2026-06-24T04:01:46.539896",
-      "completed_at": null
+      "completed_at": "2026-06-24T04:04:15.590828"
     },
     {
       "id": "task_006",
       "title": "Background Script",
       "description": "Crear background.js con lógica para gestionar la persistencia de configuraciones y comunicación entre scripts.",
       "assigned_to": "backend_expert",
-      "status": "pending",
+      "status": "in_progress",
       "priority": 3,
       "dependencies": [
         "task_002"
@@ -108,7 +110,7 @@
       "output_files": [],
       "output_summary": "",
       "created_at": "2026-06-24T03:48:22.473769",
-      "started_at": null,
+      "started_at": "2026-06-24T04:04:18.299409",
       "completed_at": null
     },
     {
@@ -200,5 +202,5 @@
       "completed_at": null
     }
   ],
-  "updated_at": "2026-06-24T04:01:46.539896"
+  "updated_at": "2026-06-24T04:04:18.299409"
 }
