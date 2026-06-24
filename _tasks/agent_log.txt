@@ -21,3 +21,5 @@
 [2026-06-24 04:01:46] [IN_PROGRESS] task_005: Lógica del Popup JavaScript
 [2026-06-24 04:04:15] [COMPLETED] task_005: Lógica del Popup JavaScript
 [2026-06-24 04:04:18] [IN_PROGRESS] task_006: Background Script
+[2026-06-24 04:06:01] [COMPLETED] task_006: Background Script
+[2026-06-24 04:06:04] [IN_PROGRESS] task_007: Content Script

@@ -1,34 +1,27 @@
 document.getElementById('take-screenshot').addEventListener('click', async () => {
   try {
-    const [tab] = await chrome.tabs.query({ active: true, currentWindow: true });
-    if (tab) {
-      const screenshot = await chrome.scripting.executeScript({
-        target: { tabId: tab.id },
-        function: () => {
-          return document.body.scrollWidth + 'x' + document.body.scrollHeight;
-        }
-      });
-
-      const [width, height] = screenshot[0].result.split('x').map(Number);
-      const dataUrl = await chrome.tabs.captureVisibleTab(tab.windowId, { format: 'png', quality: 100 });
-      
-      // Display the screenshot in the popup
-      document.getElementById('screenshot-image').src = dataUrl;
-      document.getElementById('screenshot-container').classList.remove('hidden');
-    }
+    chrome.runtime.sendMessage({ action: 'captureAndAnnotate' });
   } catch (error) {
     console.error('Error taking screenshot:', error);
   }
 });
 
 document.getElementById('annotate').addEventListener('click', () => {
-  // Placeholder for annotate functionality
-  console.log('Annotate button clicked');
+  chrome.runtime.sendMessage({ action: isAnnotating ? 'stopAnnotation' : 'startAnnotation' });
+  isAnnotating = !isAnnotating;
 });
 
 document.getElementById('options').addEventListener('click', () => {
   // Placeholder for options functionality
   console.log('Options button clicked');
+});
+
+// Handle received screenshot data from content script
+chrome.runtime.onMessage.addListener((request, sender, sendResponse) => {
+  if (request.action === 'screenshotCaptured') {
+    document.getElementById('screenshot-image').src = request.dataUrl;
+    document.getElementById('screenshot-container').classList.remove('hidden');
+  }
 });
 
 // Toggle between light and dark mode (existing code remains unchanged)

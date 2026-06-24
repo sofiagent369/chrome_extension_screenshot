@@ -19,6 +19,10 @@
     {
       "content": "Agente ⚛️ Experto Frontend completó: Lógica del Popup JavaScript. Archivos: popup.js",
       "timestamp": "2026-06-24T04:04:15.600501"
+    },
+    {
+      "content": "Agente ⚙️ Experto Backend completó: Background Script. Archivos: background.js",
+      "timestamp": "2026-06-24T04:06:01.857137"
     }
   ],
   "decisions": [],
@@ -43,7 +47,9 @@
       "popup.js"
     ],
     "backend_expert": [
-      "background.js"
+      "background.js",
+      "content.js",
+      "popup.js"
     ]
   }
 }
