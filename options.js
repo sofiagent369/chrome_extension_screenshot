@@ -3,32 +3,21 @@ document.addEventListener('DOMContentLoaded', () => {
   const themeRadios = Array.from(document.querySelectorAll('[name="theme"]'));
   const saveOptionsButton = document.getElementById('save-options');
 
-  // Function to load saved preferences
+  // Function to load saved preferences from localStorage
   function loadPreferences() {
-    chrome.storage.local.get(['preferences'], (result) => {
-      if (chrome.runtime.lastError) {
-        console.error('Error loading preferences:', chrome.runtime.lastError);
-      } else {
-        const prefs = result.preferences || {};
-        screenSizeSelect.value = prefs.screenSize || 'medium';
-        themeRadios.find(radio => radio.value === prefs.theme)?.checked = true;
-      }
-    });
+    const prefs = JSON.parse(localStorage.getItem('preferences')) || {};
+    screenSizeSelect.value = prefs.screenSize || 'medium';
+    themeRadios.find(radio => radio.value === prefs.theme)?.checked = true;
   }
 
-  // Function to save current preferences
+  // Function to save current preferences to localStorage
   function savePreferences() {
     const preferences = {
       screenSize: screenSizeSelect.value,
       theme: themeRadios.find(radio => radio.checked)?.value || 'dark'
     };
-    chrome.storage.local.set({ preferences }, () => {
-      if (chrome.runtime.lastError) {
-        console.error('Error saving preferences:', chrome.runtime.lastError);
-      } else {
-        console.log('Preferences saved successfully');
-      }
-    });
+    localStorage.setItem('preferences', JSON.stringify(preferences));
+    console.log('Preferences saved successfully');
   }
 
   // Load preferences on page load
